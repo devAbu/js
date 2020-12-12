@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Essentials</title>
+
+    <!-- First way to include/write JS...don't do this 
+      <script>
+      alert("Something...");
+    </script> -->
+    <!-- Google analytics ask to put js in the head...don't worry it will not cause any problem, since it doesn't deal with the DOM -->
+  </head>
+  <body>
+    <!-- Second way: 
+    <script>
+      alert("Something...")
+    </script>-->
+
+    <h1>HTML</h1>
+
+    <!-- Third here: - the best...it will probably deal with the DOM, so the DOM should be before the JS
+    <script>
+      alert('Something...')
+    <script>-->
+    <!-- The best practice -->
+    <script src="javascript.js"></script>
+  </body>
+</html>
