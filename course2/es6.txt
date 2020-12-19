@@ -1,0 +1,25 @@
+New syntax and features 
+Classes, modules, array and object manipulation, etc.
+
+Transpiler: read code written in one language and produces the equivalent code in another
+BABEL
+
+WEBPACK - 4.12.0
+- It bundles modules into one .js file 
+- Cones with a dev-server 
+
+WEBPACK-CLI - 3.0.3
+
+In pacakge.json: 
+  "start": "webpack --mode development",
+  "build": "webpack --mode production"
+
+webpack.config.js: Configuration for webpack
+
+webpack-dev-server --> 3.1.4:
+  Similar to nodemon 
+
+BABEL with webpack:
+  babel-core --> 6.26.3
+  babel-loader --> 7.1.4
+  babel-preset-env -->1.7.0
