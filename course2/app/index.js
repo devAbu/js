@@ -81,3 +81,70 @@ var power = wizard.power; */
 /* If the variables are already defined ==> */
 ({ magical, power } = some_hero);
 console.log(magical, power);
+
+/* ARROW FUNCTIONS */
+
+//Arrow function are anonymous - don't have a named identifier
+// Don't bind their own "this"
+//This is an object that within the function scope. The function then bind keys and values to the this object...Arrow function: "This" keyword - still access the global scope or the function wrapped around
+
+/* function blastoff() {
+  console.log("3....2....1... blastoff!");
+}
+blastoff(); 
+
+
+setTimeout(function () {
+  console.log("3....2....1... blastoff!");
+}, 1000);
+
+- OLD*/
+
+setTimeout(() => {
+  console.log("3....2....1... blastoff!");
+}, 1000);
+
+const blastoff = () => {
+  console.log("3....2....1... blastoff!");
+};
+blastoff();
+
+/*
+this.a = 25;
+
+let print = function () {
+  console.log("This.a: ", this.a); //ERROR
+};
+print();
+
+const arrowPrint = () => {
+  console.log("This.a: ", this.a);
+};
+*/
+
+/* MAP FUNCTION - allows us to create arrays by calling a function on each element of an initial array.*/
+let points = [10, 20, 30];
+
+/* let addOne = function (element) {
+  return element + 1;
+}; */
+
+let addOne = (element) => element + 1;
+
+/* points = points.map(addOne); */
+points = points.map((element) => element + 1);
+console.log(points);
+
+/* FILTERING - FILTER() - creates new arrays with all the same elements of an initial array depending on a test that we give it.*/
+/* let isPassing = (grade) => {
+  return grade >= 70;
+}; */
+
+let scores = [90, 85, 67, 71, 70, 55, 92];
+
+let passing = scores.filter((element) => element >= 70);
+console.log(passing);
+
+/* We find also find() - returns a value in an array that passes a given test
+forEach() - similar top map, calls a function for each array element 
+reduce(), some(), keys(), values()*/
